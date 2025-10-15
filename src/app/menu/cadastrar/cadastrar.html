@@ -1,0 +1,54 @@
+<form>
+  <label for="input-id">Codigo</label><br />
+  <input
+    class="input-simples"
+    id="input-codigo"
+    name="input-codigo"
+    placeholder="Digite o codigo"
+    type="number"
+    [(ngModel)]="medicamento.codigo"
+  />
+  <label for="input-nome">Nome</label><br />
+  <input
+    class="input-simples"
+    id="input-nome"
+    name="input-nome"
+    placeholder="Digite o nome do medicamento"
+    type="text"
+    [(ngModel)]="medicamento.nome"
+  />
+  <label for="input-fabricante">Fabricante</label><br />
+  <input
+    class="input-simples"
+    id="input-fabricante"
+    name="input-fabricante"
+    placeholder="Fabricante"
+    type="text"
+    [(ngModel)]="medicamento.fabricante"
+  />
+  <label for="input-dataf">Data de Fabricacao</label><br />
+  <input
+    class="input-simples"
+    id="input-dataf"
+    name="input-dataf"
+    type="date"
+    [(ngModel)]="medicamento.data_fabricacao"
+  />
+  <label for="input-datav">Data de Validade</label><br />
+  <input
+    class="input-simples"
+    id="input-datav"
+    name="input-datav"
+    type="date"
+    [(ngModel)]="medicamento.data_validade"
+  />
+  <label for="input-datav">Preco (R$)</label><br />
+  <input
+    class="input-simples"
+    id="input-preco"
+    name="input-preco"
+    type="number"
+    [(ngModel)]="medicamento.preco"
+  />
+  <button class="input-submeter" (click)="submeter()">Cadastrar</button>
+</form>

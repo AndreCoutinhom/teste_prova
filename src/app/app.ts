@@ -1,12 +1,15 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { Cabecalho } from './cabecalho/cabecalho';
+import { Rodape } from './rodape/rodape';
+import { Principal } from './principal/principal';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, Cabecalho, Rodape, Principal],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('teste_prova');
+  title = 'teste_prova';
 }

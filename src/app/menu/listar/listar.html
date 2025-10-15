@@ -1,0 +1,27 @@
+<div class="content-container">
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Codigo</th>
+          <th>Nome</th>
+          <th>Fabricante</th>
+          <th>Data de Fabricacao</th>
+          <th>Data de Validade</th>
+          <th>Preco</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (medicamento of listaMedicamentos; track medicamento){
+        <tr>
+          <td>{{ medicamento.codigo }}</td>
+          <td>{{ medicamento.nome }}</td>
+          <td>{{ medicamento.fabricante }}</td>
+          <td>{{ medicamento.data_fabricacao }}</td>
+          <td>{{ medicamento.data_validade }}</td>
+          <td>{{ medicamento.preco }}</td>
+
+        </tr>
+        }
+      </tbody>
+    </table>
+  </div>
