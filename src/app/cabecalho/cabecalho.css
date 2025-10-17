@@ -2,7 +2,7 @@ header {
     width: 90%;
     display: flex;
     flex-direction: row;
-    background: linear-gradient(to right, #fbae00, #044481);
+    background-color: #fbae00;
     margin: 0px auto;
     margin-bottom: 5px;
     padding: 0px;
@@ -19,7 +19,7 @@ header h1, header nav {
 
 h1 a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 div {
@@ -27,7 +27,7 @@ div {
 }
 
 header h1 {
-    color: white;
+    color: black;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -40,7 +40,8 @@ nav {
 nav a {
     font-family: 'Courier New', Courier, monospace;
     font-size: 14px;
-    color: white;
+    font-weight: bold;
+    color: black;
     flex: 1;
     cursor: pointer;
     text-align: center;
@@ -48,7 +49,7 @@ nav a {
 
 nav a:hover {
     font-size: 25px;
-    color: #7cc0ff;
+    color: #003670;
     font-weight: bolder;
 }
 

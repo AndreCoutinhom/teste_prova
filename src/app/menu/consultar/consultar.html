@@ -1,1 +1,28 @@
-<p>consultar works!</p>
+<div class="consulta-container">
+    <form (ngSubmit)="buscarMedicamento()">
+      <label for="input-codigo">Informe o ID do medicamento:</label>
+      <input
+        type="text"
+        id="input-codigo"
+        name="input-codigo"
+        [(ngModel)]="idBusca"
+        class="input-codigo"
+        required
+      />
+      <button type="submit" class="btn-buscar">Buscar</button>
+    </form>
+  
+    <div *ngIf="medicamentoEncontrado" class="medicamento-dados">
+      <h2>Dados do Medicamento</h2>
+      <p><strong>Código:</strong> {{ medicamentoEncontrado.codigo }}</p>
+      <p><strong>Nome:</strong> {{ medicamentoEncontrado.nome }}</p>
+      <p><strong>Fabricante:</strong> {{ medicamentoEncontrado.fabricante }}</p>
+      <p><strong>Data de Fabricação:</strong> {{ medicamentoEncontrado.data_fabricacao }}</p>
+      <p><strong>Data de Validade:</strong> {{ medicamentoEncontrado.data_validade }}</p>
+      <p><strong>Preço:</strong> {{ medicamentoEncontrado.preco }}</p>
+    </div>
+  
+    <div *ngIf="erroBusca" class="erro-busca">
+      {{ erroBusca }}
+    </div>
+  </div>

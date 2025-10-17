@@ -3,6 +3,6 @@ main {
     height: 500px;
     margin: 0% auto;
     border: 3px solid black;
-    background: linear-gradient(to right, #fbae00, #044481);
+    background: linear-gradient(to bottom, #fbae00, #044481);
 
 }
