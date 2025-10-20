@@ -1,5 +1,6 @@
 export interface Farmacia {
-    codigo: number;
+    id: number;
+    codigo: string;
     nome: string;
     fabricante: string;
     data_fabricacao: Date;

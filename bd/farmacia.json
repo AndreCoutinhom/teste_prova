@@ -1,8 +1,8 @@
 {
   "medicamentos": [
     {
-      "id": "f477",
-      "codigo": 1,
+      "id": "1",
+      "codigo": "f477",
       "nome": "Vacina Covid-19",
       "fabricante": "Jansen",
       "data_fabricacao": "2020-06-20",
@@ -10,8 +10,8 @@
       "preco": 0
     },
     {
-      "id": "d417",
-      "codigo": 2,
+      "id": "2",
+      "codigo": "d417",
       "nome": "Ibuprofeno",
       "fabricante": "Genérico",
       "data_fabricacao": "2019-08-21",
@@ -19,13 +19,22 @@
       "preco": 40
     },
     {
-      "id": "4ccb",
-      "codigo": 3,
+      "id": "3",
+      "codigo": "4ccb",
       "nome": "Dipirona",
       "fabricante": "Ultrafarma",
       "data_fabricacao": "2025-10-14",
       "data_validade": "2026-10-14",
       "preco": 20
+    },
+    {
+      "id": "4",
+      "codigo": "6095",
+      "nome": "Não é remédio",
+      "fabricante": "Não é fabricante",
+      "data_fabricacao": "2001-12-23",
+      "data_validade": "2001-12-24",
+      "preco": 10000000000000
     }
   ]
 }

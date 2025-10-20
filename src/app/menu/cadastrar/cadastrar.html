@@ -1,11 +1,20 @@
 <form>
-  <label for="input-id">Codigo</label><br />
+  <label for="input-id">ID</label><br />
   <input
     class="input-simples"
     id="input-codigo"
     name="input-codigo"
     placeholder="Digite o codigo"
     type="number"
+    [(ngModel)]="medicamento.id"
+  />
+  <label for="input-id">Codigo</label><br />
+  <input
+    class="input-simples"
+    id="input-codigo"
+    name="input-codigo"
+    placeholder="Digite o codigo"
+    type="text"
     [(ngModel)]="medicamento.codigo"
   />
   <label for="input-nome">Nome</label><br />

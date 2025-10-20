@@ -23,6 +23,7 @@ export class Consultar {
     this.medicamentoEncontrado = null;
 
     if (this.idBusca != null) {
+      
       this.medicamentosService.buscarPorId(this.idBusca).subscribe({
         next: (medicamento) => {
           if (medicamento) {

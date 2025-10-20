@@ -19,8 +19,8 @@ export class FarmaciaComponent {
     return this.http.post<Farmacia>(this.API, medicamento);
   }
 
-  excluir(codigo: number): Observable<Farmacia> {
-    return this.http.delete<Farmacia>(this.API + `/${codigo}`);
+  excluir(id: number): Observable<Farmacia> {
+    return this.http.delete<Farmacia>(this.API + `/${id}`);
   }
 
   buscarPorId(id: number): Observable<Farmacia | undefined> {

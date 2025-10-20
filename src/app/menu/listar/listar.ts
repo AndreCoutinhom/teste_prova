@@ -21,11 +21,11 @@ listaMedicamentos: Farmacia[] = [];
   }
 
   //Esse método serve para excluir um cliente da lista e atualizar a tela automaticamente, sem recarregar a página.
-  excluir(codigo: number) {
-    if (codigo) {
-      this.service.excluir(codigo).subscribe(() => {
+  excluir(id: number) {
+    if (id) {
+      this.service.excluir(id).subscribe(() => {
         // Remove o cliente com o id correspondente da lista
-        this.listaMedicamentos = this.listaMedicamentos.filter(medicamento => medicamento.codigo !== codigo);
+        this.listaMedicamentos = this.listaMedicamentos.filter(medicamento => medicamento.id !== id);
       });
     }
   }

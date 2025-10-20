@@ -30,9 +30,8 @@ idExcluir: number | null = null;
     if (this.idExcluir != null) {
       this.medicamentosService.excluir(this.idExcluir).subscribe({
         next: () => {
-          this.router.navigate(['/listagem']); // Navega após excluir
-          //this.mensagemSucesso = `Cliente com ID ${this.idExcluir} excluído com sucesso.`;
-          //this.idExcluir = null;
+          this.mensagemSucesso = `Cliente com ID ${this.idExcluir} excluído com sucesso.`;
+          this.idExcluir = null;
         },
         error: () => {
           this.erroMensagem = `Erro ao excluir o cliente.`;
